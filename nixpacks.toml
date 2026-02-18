@@ -1,11 +1,11 @@
-﻿[phases.setup]
+[phases.setup]
 nixPkgs = ["jdk17"]
 
 [phases.build]
 cmds = [
   "mkdir -p bin",
   "find src -name '*.java' > sources.txt",
-  "javac -d bin -cp src @sources.txt"
+  "javac -encoding UTF-8 -d bin -cp src @sources.txt"
 ]
 
 [start]
