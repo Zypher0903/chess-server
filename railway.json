@@ -1,9 +1,1 @@
-{
-  "build": {
-    "builder": "NIXPACKS"
-  },
-  "deploy": {
-    "startCommand": "java -cp bin chess.online.ChessServer",
-    "restartPolicyType": "ALWAYS"
-  }
-}
+{"build":{"builder":"NIXPACKS"},"deploy":{"startCommand":"java -cp bin chess.online.ChessServer","restartPolicyType":"ALWAYS"}}
