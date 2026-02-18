@@ -1,0 +1,12 @@
+﻿[phases.setup]
+nixPkgs = ["jdk17"]
+
+[phases.build]
+cmds = [
+  "mkdir -p bin",
+  "find src -name '*.java' > sources.txt",
+  "javac -d bin -cp src @sources.txt"
+]
+
+[start]
+cmd = "java -cp bin chess.online.ChessServer"

@@ -1,0 +1,7 @@
+﻿{
+  "$schema": "https://railway.app/railway.schema.json",
+  "deploy": {
+    "startCommand": "java -cp bin chess.online.ChessServer",
+    "restartPolicyType": "ALWAYS"
+  }
+}
