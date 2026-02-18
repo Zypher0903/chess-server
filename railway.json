@@ -1,5 +1,8 @@
 ﻿{
   "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS"
+  },
   "deploy": {
     "startCommand": "java -cp bin chess.online.ChessServer",
     "restartPolicyType": "ALWAYS"
